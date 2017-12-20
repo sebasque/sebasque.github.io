@@ -1,4 +1,7 @@
+
 /* Stylesheet for Personal Website */
+
+/* Starter CSS */
 
 html {
     position: relative;
@@ -6,20 +9,168 @@ html {
 }
 
 body {
-    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif !important;
+    padding-bottom: 60px;
+    background: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: auto 1268px;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Nav */
+
+.navbar {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+}
+
+.navbar-brand {
+    margin-left: 10%;
 }
 
 #title {
+    color: #fff;
     padding-left: 10px;
 }
 
-#content {
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,118,57);
+}
+.navbar .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbarNavDropdown {
+    margin-right: 10%;
+}
+
+#navbarNavDropdown li {
+    padding: 0 10px;
+}
+
+#navbarNavDropdown li a {
+    color: #fff;
+    padding: 8px 12px;
     text-align: center;
 }
 
-#content h1 {
-    padding-top: 40px;
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
 }
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #ff7639;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* Content */
+
+#home {
+    margin-top: 100px;
+    height: 500px;
+    text-align: center;
+}
+
+#home .jumbotron {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#home .jumbotron hr {
+    border-color: #fff;
+    border-width: 3px;
+}
+
+#home .btn-outline-primary {
+    color: #ff7639 !important;
+    border-color: #ff7639 !important;
+}
+
+#home .btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #ff7639 !important;
+}
+
+main .content {
+    height: auto;
+    width: 100%;
+    padding: 36px 0;
+    background-color: #fff;
+}
+
+main .content:nth-child(3) {
+    background-color: #ff7639;
+    color: #fff;
+}
+
+.content:nth-child(odd) hr {
+    border-color: #fff;
+}
+
+.content:nth-child(even) hr {
+    border-color: #6a6a6a;
+}
+
+main .card {
+    padding: 20px;
+    margin: 20px 0;
+    color: #000;
+    min-height: 330px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 12px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+main .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+main .card .card-title {
+    margin-top: 20px;
+}
+
+main .card .btn-outline-primary {
+    border-color: #6a6a6a;
+    color: #6a6a6a;
+}
+main .card .btn-outline-primary:hover {
+    background-color: #6a6a6a;
+    color: #fff;
+}
+
+#contact .row .col-sm {
+    margin: 20px 0;
+}
+
+/* Footer */
 
 .footer {
     height: 60px;
@@ -29,4 +180,43 @@ body {
     bottom: 0;
     width: 100%;
     background-color: #f5f5f5;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+        background-size: auto 1368px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-brand {
+        margin-left: 5%;
+    }
+
+    #navbarNavDropdown {
+        margin: 0;
+    }
+
+    body {
+        background-size: auto 991px;
+    }
+
+    #navbarNavDropdown li a {
+        width: 100px;
+        margin:auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
 }

@@ -5,39 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My name is Michael Koohang! Welcome to my personal website!">
+    <meta name="keywords" content="michael, koohang, website, personal, portfolio, projects, about, contact, software, engineering, engineer, developer, student, university, middle, georgia, state">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="site.js"></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Michael Koohang</title>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md">
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             <span id="title">Michael Koohang</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home</a>
-                <a class="nav-item nav-link disabled" href="#">About</a>
-                <a class="nav-item nav-link disabled" href="#">Projects</a>
-                <a class="nav-item nav-link disabled" href="#">Contact</a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center" href="#about" id="aboutbtn">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-
-    <main role="main" class="container" id="main">
-        <div class="container" id="content">
-            <img class="img-fluid" src="img/logo.png" alt="Picture of logo.">
-            <h1>Stay tuned...</h1>
+    <main>
+        <div class="container" id="home">
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-3">Hi there!</h1>
+                <p class="lead">My name is Michael Koohang and this is my personal website.</p>
+                <hr>
+                <p>This is where you can learn more about me and the projects I've worked on. Feel free to take a look around :)</p>
+                <p class="lead">
+                    <a class="btn btn-outline-primary btn-lg" href="#about" role="button">Explore</a>
+                </p>
+            </div>
+        </div>
+        <div class="content" id="about">
+            <div class="container">
+                <h1>About</h1>
+                <hr>
+                <h4>Summary</h4>
+                <p>
+                    I am a dual-enrollment student studying software engineering at Middle Georgia State University. I have a passion for software engineering and I am very adament about creating software that can make a positive impact on people's lives. It's what makes
+                    me get up every morning to pursue my passion. In addition to software engineering, I am BIG soccer fan! I've been playing since I was 6 years old and I've loved the sport ever since. I'm also a part time tutor and lab assistant at
+                    Middle Georgia State University and I plan on graduating with my bachelor's degree in May of 2019 at the age of 18!
+                </p>
+                <h4>Skills</h4>
+                <ul>
+                    <li>iOS Development</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Swift</li>
+                    <li>Data Structures</li>
+                    <li>Object Oriented Programming</li>
+                </ul>
+                <h4>Goals</h4>
+                <ol>
+                    <li>Complete my Bachelor's degree.</li>
+                    <li>Maintain a 4.0 GPA.</li>
+                    <li>Attain a master's degree in computer science.</li>
+                    <li>Work for Apple.</li>
+                    <li>Be awesome!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="content" id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <hr>
+                <p>
+                    Here are the projects I am currently working on.
+                </p>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/krlogo.jpg" alt="Knight Rider Logo">
+                        <div class="card-body">
+                            <h4 class="card-title">Knight Rider</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">iOS / Android / Web</h6>
+                            <p class="card-text">A simple ridesharing app designed to facilitate multi-campus transportation across Middle Georgia State University.</p>
+                            <a href="#" class="btn btn-outline-primary">Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top img-fluid" src="..." alt="Image coming soon...">
+                            <h4 class="card-title">Knight Bot</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Robotics</h6>
+                            <p class="card-text">An AI powered robot designed to interact and communicate with students, faculty, and staff at Middle Georgia State University.</p>
+                            <a href="#" class="btn btn-outline-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top img-fluid" src="..." alt="Image coming soon...">
+                            <h4 class="card-title">Alium</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">iOS</h6>
+                            <p class="card-text">An iOS app that helps people of similar cultural backgrounds to connect with each other in their respective geographic areas.</p>
+                            <a href="#" class="btn btn-outline-primary">Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top img-fluid" src="..." alt="Image coming soon...">
+                            <h4 class="card-title">My Website</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Web</h6>
+                            <p class="card-text">My one page, static portfolio website powered by Bootstrap v4 and JavaScript.</p>
+                            <a href="#" class="btn btn-outline-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="contact">
+            <div class="container">
+                <h1>Contact</h1>
+                <hr>
+                <p>
+                    If you'd like to get in touch, you can do so by using any of the links below :)
+                </p>
+                <ul>
+                    <li>Email: <a href="mailto: michael.s.k1001@gmail.com">michael.s.k1001@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/michael-koohang-5611ba14a/">https://www.linkedin.com/in/michael-koohang-5611ba14a/</a></li>
+                    <li>Github: <a href="https://github.com/michael-k101">https://github.com/michael-k101</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/michael.k101/">https://www.instagram.com/michael.k101/</a></li>
+                </ul>
+            </div>
         </div>
     </main>
 
@@ -46,6 +152,11 @@
             <span class="text-muted">&copy; Michael Koohang 2017</span>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="site.js"></script>
 </body>
 
 </html>
