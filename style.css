@@ -109,12 +109,12 @@ main {
     border-width: 3px;
 }
 
-#home .btn-outline-primary {
+.btn-outline-primary {
     color: #ff7639 !important;
     border-color: #ff7639 !important;
 }
 
-#home .btn-outline-primary:hover {
+.btn-outline-primary:hover {
     color: #fff !important;
     background-color: #ff7639 !important;
 }
@@ -166,7 +166,7 @@ main .projects .btn-outline-primary:hover {
     color: #fff;
 }
 
-.badge-orange {
+.orange {
     background-color: #ff7639;
     color: #fff;
 }
@@ -181,6 +181,25 @@ main .projects .btn-outline-primary:hover {
 
 #goals {
     margin-top: 24px;
+}
+
+#contact {
+}
+
+#contact .btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#contact .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact .btn-group {
+    width: 75%;
+    margin: auto;
+    text-align: center;
 }
 
 /* Footer */
