@@ -2,14 +2,6 @@
 /* JS File for Personal Website */
 
 $(document).ready(function() {
-    $("main").css({
-        "margin-top": "200px",
-        "opacity": "0"
-    });
-    $("main").animate({
-        "margin-top": "40px",
-        "opacity": "1"
-    }, "slow");
 
     $("a").on('click', function(event) {
 
