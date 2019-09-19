@@ -31,19 +31,6 @@ main .content {
     background-color: #fff;
 }
 
-main .content:nth-child(3) {
-    background-color: #ff7639;
-    color: #fff;
-}
-
-main .content:nth-child(odd) hr {
-    border-color: #fff;
-}
-
-main .content:nth-child(even) hr {
-    border-color: #6a6a6a;
-}
-
 /* Nav */
 
 .navbar {
@@ -58,10 +45,6 @@ main .content:nth-child(even) hr {
 #title {
     color: #fff;
     padding-left: 10px;
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,118,57);
 }
 
 .navbar .custom-toggler .navbar-toggler-icon {
@@ -112,24 +95,6 @@ main .content:nth-child(even) hr {
   right: 0;
 }
 
-/* Header */
-
-#header {
-    margin-top: 100px;
-    height: 500px;
-    text-align: center;
-}
-
-#header .jumbotron {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#header .jumbotron hr {
-    border-color: #fff;
-    border-width: 3px;
-}
-
 /* About */
 
 #photo {
@@ -165,7 +130,7 @@ main .projects {
     padding: 20px;
     margin: 20px 0;
     color: #000;
-    min-height: 330px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 12px rgba(0, 0, 0, 0.23);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
