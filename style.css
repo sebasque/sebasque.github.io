@@ -119,8 +119,9 @@ body {
 }
 
 .bg-container-dark {
-    background-color: var(--black);
-    padding: 2em 0;
+    background-color: var(--white);
+    margin-top: 1em;
+    color: var(--black);
 }
 
 .title-light {
@@ -128,7 +129,7 @@ body {
 }
 
 .title-dark {
-    color: var(--white);
+    color: var(--black);
 }
 
 .badge-main {
