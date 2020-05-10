@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Michael Koohang | Engineer, Designer, Athlete">
+    <meta name="description" content="Michael Koohang | Engineer, Designer, Athlete">
     <meta name="keywords" content="michael, koohang, website, personal, portfolio, portfolio, 
                                     about, contact, software, engineering, engineer, developer, 
                                     student, university, middle, georgia, state, georgia, tech, apple,
@@ -14,7 +13,7 @@
     <link rel="icon" type="image/png" href="res/img/logo-shadow.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res/css/index.css">
     <script src="https://kit.fontawesome.com/1ddcb6ee5f.js" crossorigin="anonymous"></script>
     <title>Michael Koohang</title>
 </head>
@@ -22,6 +21,7 @@
 <body>
     <main>
         <div id="header">
+
             <nav class="nav">
                 <li class="nav-item">
                     <img id="nav-logo" src="res/img/logo-shadow.png" alt="Michael Koohang Logo">
@@ -33,66 +33,151 @@
                     <a class="nav-link" href="portfolio/portfolio.html">Portfolio</a>
                 </li>
             </nav>
-            <div id="titleContainer" class="container">
+
+            <div id="title-container" class="container">
                 <h1 id="title">Michael Koohang</h1>
                 <h4 id="subtitle">Engineer, Designer, Athlete</h4>
-                <div id="social">
+                <div id="social-container">
                     <a href="https://github.com/michaelkoohang" target="_blank">
-                        <img src="res/img/social/github.png" alt="Github logo">
+                        <img class="social-icon" src="res/img/social/github.png" alt="Github logo">
                     </a>
                     <a href="https://www.linkedin.com/in/michael-koohang-5611ba14a/" target="_blank">
-                        <img src="res/img/social/linkedin.png" alt="LinkeIn logo">
-                    </a>
-                    <a href="https://open.spotify.com/user/michael-k101?si=Bt5hwXHkQzabtayUWw2vWw" target="_blank">
-                        <img src="res/img/social/spotify.png" alt="Spotify logo">
+                        <img class="social-icon" src="res/img/social/linkedin.png" alt="LinkeIn logo">
                     </a>
                 </div>
             </div>
+
+            <h1 id="watermark">ABOUT</h1>
         </div>
-        <div class="bg-container-light">
-            <div id="about" class="container">
-                <div class="row">
-                    <div id="about-picture" class="col-md-4">
-                        <img id="profile-pic" class="img-fluid" src="res/img/profile-pic.jpeg"
-                            alt="Picture of Michael Koohang">
+
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="res/img/profile-pic.jpeg"
+                        alt="Picture of Michael Koohang">
+                </div>
+                <div id="about-description" class="col-md-8">
+                    <h1>Hello! 😁👋🏻</h1>
+                    <hr>
+                    <p class="intro-text">
+                        My name is Michael Koohang and I'm a computer science graduate student at Georgia Tech 🟡⚫️.
+                        I'm specializing in Human-Computer Interaction, and my research focuses on creating
+                        mobile and full-stack applications for civic environments and data collection.
+                    </p>
+                    <p class="intro-text">
+                        I'm an engineer by trade and a designer at heart. I love using the technologies
+                        around me to improve people's lives, and I see it as an obligation to do so with 
+                        the computing and design skills I've acquired in my studies.
+                        <p>
+                    <p class="intro-text">
+                        I also love playing soccer and sketching in my free time, as well as running
+                        and exercising every chance I get. My obsessions include music, Harry Potter, 
+                        and my work (of course).
+                    </p>
+                    <hr>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Coding is secondary. It's the people you code for
+                            that matter the most.</p>
+                        <footer class="blockquote-footer">Michael Koohang</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container">
+            <div id="my-work-header">
+                <h1><i class="fas fa-code-branch"></i> My Work</h1>
+                <a class="btn" href="portfolio/portfolio.html">Porfolio <i class="fab fa-codepen"></i></a>
+                <a class="btn" href="res/docs/michael-koohang-resume.pdf" download="michael-koohang-resume.pdf">
+                    Resume <i class="fas fa-file-download"></i>
+                </a>
+            </div>
+            <p id="my-work-text">
+                I've had the privelege of volunteering, working, and earning scholarships at some awesome
+                places...
+            </p>
+            <div class="row row-cols-2 row-cols-lg-3">
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/mga.png" class="card-img-top img-fluid" alt="Middle Georgia State University logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Information Technology Tutor</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Part Time</h6>
+                        </div>
                     </div>
-                    <div id="about-description" class="col-md-8">
-                        <h1>Hello! 😁👋🏻</h1>
-                        <hr>
-                        <p class="intro-text">
-                            My name is Michael Koohang and I'm a computer science graduate student at Georgia Tech 🟡⚫️.
-                            I'm specializing in Human-Computer Interaction, and my research focuses on creating
-                            mobile and full-stack applications for civic environments and data collection.
-                            <p>
-                                <p class="intro-text">
-                                    I'm an engineer by trade and a designer at heart. I love using the technologies
-                                    around me
-                                    to improve people's lives, and I see it as an obligation to do so with the computing
-                                    and design skills
-                                    I've acquired in my studies.
-                                    <p>
-                                        <p class="intro-text">
-                                            I also love playing soccer and sketching in my free time, as well as running
-                                            and exercising every
-                                            chance I get :) My obsessions include music, Harry Potter, and my work (of
-                                            course).
-                                            <p>
-                                                <hr>
-                                                <blockquote class="blockquote">
-                                                    <p class="mb-0">Coding is secondary. It's the people you code for
-                                                        that matter the most.</p>
-                                                    <footer class="blockquote-footer">Michael Koohang</footer>
-                                                </blockquote>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/mga.png" class="card-img-top img-fluid" alt="Middle Georgia State University logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Robotics Lab Assistant</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Part Time</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/gt.png" class="card-img-top img-fluid" alt="Georgia Tech logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Civic Data Science Intern</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Internship</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/apple.png" class="card-img-top img-fluid" alt="Apple logo">
+                        <div class="card-body">
+                            <h5 class="card-title">WWDC19 Scholar</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Scholarship</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/gt.png" class="card-img-top img-fluid" alt="Georgia Tech logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Graduate Research Assistant</h5>
+                            <h6 class="card-subtitle  badge my-work-badge">Part Time</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/gt.png" class="card-img-top img-fluid" alt="Georgia Tech logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Graduate Teaching Assistant</h5>
+                            <h6 class="card-subtitle  badge my-work-badge">Part Time</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/stanford.png" class="card-img-top img-fluid" alt="Stanford University logo">
+                        <div class="card-body">
+                            <h5 class="card-title">CS 106A Code in Place - Section Leader</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Volunteer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-2">
+                    <div class="card my-work-card">
+                        <img src="res/img/work/nike.png" class="card-img-top img-fluid" alt="Nike logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer Intern</h5>
+                            <h6 class="card-subtitle badge my-work-badge">Internship</h6>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-container-dark">
-            <div id="skill" class="container">
-                <h1 class="title-dark"><i class="fas fa-tools"></i> Skills</h1>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1><i class="fas fa-tools"></i> Skills</h1>
                 <div class="row">
                     <div class="col mt-4">
-                        <h4 class="title-dark"><i class="far fa-file-code"></i> Languages</h4>
+                        <h4><i class="far fa-file-code"></i> Languages</h4>
                         <p class="mt-4">
                             <span class="badge badge-pill badge-main">Python
                                 <span class="badge badge-pill badge-star">
@@ -169,7 +254,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 mt-4">
-                        <h4 class="title-dark"><i class="fab fa-stack-overflow"></i> Theory</h4>
+                        <h4><i class="fab fa-stack-overflow"></i> Theory</h4>
                         <p class="mt-4">
                             <span class="badge badge-pill badge-main">Software Engineering
                                 <span class="badge badge-pill badge-star">
@@ -264,7 +349,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 mt-4">
-                        <h4 class="title-dark"><i class="fab fa-sketch"></i> Software</h4>
+                        <h4><i class="fab fa-sketch"></i> Software</h4>
                         <p class="mt-4">
                             <span class="badge badge-pill badge-main">Sketch
                                 <span class="badge badge-pill badge-star">
@@ -415,84 +500,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-container-light">
-            <div id="my-work" class="container">
-                <div id="my-work-header">
-                    <h1 class="title-light"><i class="fas fa-code-branch"></i> My Work</h1>
-                    <form method="get" action="res/docs/michael-koohang-resume.pdf">
-                        <button id="resume-btn">Resumé <i class="fas fa-file-download"></i></button>
-                    </form>
-                </div>
-                <p>
-                    I've had the privelege of volunteering, working, and earning scholarships at some pretty awesome
-                    places...
-                </p>
-                <div class="row row-cols-2 row-cols-lg-3">
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/mga.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">IT Tutor and Robotics Lab Assitant</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Employment</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/gt.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Civic Data Science Intern</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Employment</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/gt.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Graduate Research and Teaching Assistant</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Employment</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/apple.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">WWDC19 Scholar</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Scholarship</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/stanford.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CS 106A Code in Place - Section Leader</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Volunteer</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mt-2">
-                        <div class="card card-my-work">
-                            <img src="res/img/work/nike.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Software Engineer Intern</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Internship</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        
     </main>
+
     <footer class="footer">
         <div class="container">
             &copy; Michael Koohang | 2020
         </div>
     </footer>
-    <script src="site.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

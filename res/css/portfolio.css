@@ -1,0 +1,21 @@
+
+/* portfolio.css */
+
+/*
+    Color Scheme
+
+    White: FAFFFD
+    Green: #97FF0
+    Black: #342E37
+    Gray: #E8EEF2
+*/
+
+:root {
+    --black: #342E37;
+    --white: #FAFFFD;
+    --green: #97FF00;
+    --gray: #E8EEF2;
+}
+
+
+
