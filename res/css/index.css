@@ -40,24 +40,6 @@ section {
     padding: 2em 0;
 }
 
-.badge-main {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 0.75em 1em;
-    margin-bottom: 1em;
-    margin-right: 0.5em;
-    border-radius: 0;
-}
-
-.badge-star {
-    padding: 0.5em 0.75em;
-    font-size: 8px;
-    margin-left: 4px;
-    background-color: var(--green);
-    color: var(--black);
-    border-radius: 0;
-}
-
 .card {
     border: 0.5px solid var(--gray);
     border-radius: 0;
@@ -197,6 +179,27 @@ section {
 #my-work-text {
     margin-top: 1em;
     margin-bottom: 0;
+}
+
+/* Skills */
+
+.skills-badge {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.75em 1em;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+    border-radius: 0;
+    font-size: 0.75em;
+}
+
+.badge-star {
+    padding: 0.5em 0.75em;
+    font-size: 1em;
+    margin-left: 4px;
+    background-color: var(--black);
+    color: var(--green);
+    border-radius: 0;
 }
 
 /* Footer */
