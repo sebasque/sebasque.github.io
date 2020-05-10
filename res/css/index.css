@@ -269,5 +269,9 @@ section {
     #work-button-container {
         margin-top: 1em;
     }
+
+    .footer {
+        padding-left: 1em;
+    }
     
 }
