@@ -183,7 +183,7 @@ section {
 
 /* Skills */
 
-.skills-badge {
+.my-skills-badge {
     background-color: var(--black);
     color: var(--white);
     padding: 0.75em 1em;
