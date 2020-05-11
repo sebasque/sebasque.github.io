@@ -155,10 +155,10 @@ section {
     transition: transform 0.1s ease-in-out;
     background-color: var(--white);
     border: 1px solid var(--black);
-    padding: 0.4em 0.6em;
+    padding: 0.5em 1em;
     color: var(--black);
-    margin-left: 1em;
-    border-radius: 0;
+    margin-left: 0.5em;
+    border-radius: 100px;
     font-weight: 500;
     outline: none;
 }
@@ -265,7 +265,7 @@ section {
 
     .btn {
         margin-left: 0;
-        margin-right: 1em;
+        margin-right: 0.5em;
     }
 
     #work-button-container {
