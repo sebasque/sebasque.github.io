@@ -1,0 +1,40 @@
+{
+  "work": [
+    {
+      "title": "Software Engineer Intern",
+      "type": "Internship",
+      "img": "nike.png",
+      "alt": "Nike"
+    },
+    {
+      "title": "CS 106A Section Leader - Code in Place",
+      "type": "Internship",
+      "img": "stanford.png",
+      "alt": "Stanford University"
+    },
+    {
+      "title": "Graduate Research Internship",
+      "type": "Part Time",
+      "img": "gt.png",
+      "alt": "Georgia Tech"
+    },
+    {
+      "title": "Graduate Teaching Assistant",
+      "type": "Part Time",
+      "img": "gt.png",
+      "alt": "Georgia Tech"
+    },
+    {
+      "title": "WWDC19 Scholar",
+      "type": "Scholarship",
+      "img": "apple.png",
+      "alt": "Apple"
+    },
+    {
+      "title": "Civic Data Science Intern",
+      "type": "Internship",
+      "img": "gt.png",
+      "alt": "Georgia Tech"
+    }
+  ]
+}

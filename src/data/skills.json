@@ -1,0 +1,136 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "stars": "5"
+    },
+    {
+      "name": "Swift",
+      "stars": "4"
+    },
+    {
+      "name": "Java",
+      "stars": "4"
+    },
+    {
+      "name": "HTML",
+      "stars": "4"
+    },
+    {
+      "name": "CSS",
+      "stars": "4"
+    },
+    {
+      "name": "SQL",
+      "stars": "4"
+    },
+    {
+      "name": "JavaScript",
+      "stars": "3"
+    },
+    {
+      "name": "C",
+      "stars": "3"
+    }
+  ],
+  "foundations": [
+    {
+      "name": "Software Engineering",
+      "stars": "5"
+    },
+    {
+      "name": "Agile Development",
+      "stars": "4"
+    },
+    {
+      "name": "Project Management",
+      "stars": "4"
+    },
+    {
+      "name": "UI / UX Design",
+      "stars": "4"
+    },
+    {
+      "name": "HCI Research Methods",
+      "stars": "4"
+    },
+    {
+      "name": "Computer Architecture",
+      "stars": "4"
+    },
+    {
+      "name": "Operating Systems",
+      "stars": "4"
+    },
+    {
+      "name": "Software Security",
+      "stars": "4"
+    },
+    {
+      "name": "Data Structures",
+      "stars": "4"
+    },
+    {
+      "name": "Algorithms",
+      "stars": "3"
+    }
+  ],
+  "software": [
+    {
+      "name": "Sketch",
+      "stars": "5"
+    },
+    {
+      "name": "Flask",
+      "stars": "5"
+    },
+    {
+      "name": "MySQL",
+      "stars": "5"
+    },
+    {
+      "name": "PostgreSQL",
+      "stars": "5"
+    },
+    {
+      "name": "Git",
+      "stars": "5"
+    },
+    {
+      "name": "Linux",
+      "stars": "5"
+    },
+    {
+      "name": "REST",
+      "stars": "5"
+    },
+    {
+      "name": "Postman",
+      "stars": "5"
+    },
+    {
+      "name": "Heroku",
+      "stars": "5"
+    },
+    {
+      "name": "Xcode",
+      "stars": "4"
+    },
+    {
+      "name": "Android Studio",
+      "stars": "4"
+    },
+    {
+      "name": "MongoDB",
+      "stars": "4"
+    },
+    {
+      "name": "Node.js",
+      "stars": "4"
+    },
+    {
+      "name": "React.js",
+      "stars": "3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+
+.my-skills-badge {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.75em 1em;
+  padding-right: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+  border-radius: 0;
+  font-size: 0.75em;
+}
+
+.badge-star {
+  font-size: 1em;
+  background-color: var(--black);
+  color: var(--green);
+  border-radius: 0;
+}
+
+.fas, .far {
+  margin-left: 3px;
+}

@@ -1,0 +1,28 @@
+/* My Work */
+
+#my-work-header {
+  display: flex;
+  align-items: center;
+}
+
+#my-work-header h1 {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.my-work-card {
+  min-height: 370px;
+  margin-top: 1.75em;
+}
+
+.my-work-badge {
+  background-color: var(--green);
+  padding: 0.5em 0.75em;
+  color: var(--black);
+  border-radius: 0;
+}
+
+#my-work-text {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
