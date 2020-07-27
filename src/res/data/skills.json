@@ -31,6 +31,10 @@
     {
       "name": "C",
       "stars": "3"
+    },
+    {
+      "name": "Scala",
+      "stars": "1"
     }
   ],
   "foundations": [
@@ -39,7 +43,11 @@
       "stars": "5"
     },
     {
-      "name": "Agile Development",
+      "name": "iOS Development",
+      "stars": "4"
+    },
+    {
+      "name": "Web Development",
       "stars": "4"
     },
     {
@@ -52,18 +60,6 @@
     },
     {
       "name": "HCI Research Methods",
-      "stars": "4"
-    },
-    {
-      "name": "Computer Architecture",
-      "stars": "4"
-    },
-    {
-      "name": "Operating Systems",
-      "stars": "4"
-    },
-    {
-      "name": "Software Security",
       "stars": "4"
     },
     {
@@ -93,23 +89,11 @@
       "stars": "5"
     },
     {
-      "name": "Git",
-      "stars": "5"
-    },
-    {
       "name": "Linux",
       "stars": "5"
     },
     {
-      "name": "REST",
-      "stars": "5"
-    },
-    {
       "name": "Postman",
-      "stars": "5"
-    },
-    {
-      "name": "Heroku",
       "stars": "5"
     },
     {
@@ -118,6 +102,10 @@
     },
     {
       "name": "Android Studio",
+      "stars": "4"
+    },
+    {
+      "name": "Nginx",
       "stars": "4"
     },
     {

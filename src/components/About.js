@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePicture from '../res/img/profile-pic.jpeg';
-import workData from '../data/work.json';
-import skillsData from '../data/skills.json';
+import workData from '../res/data/work.json';
+import skillsData from '../res/data/skills.json';
 import { Link } from 'react-router-dom';
 import WorkCard from './WorkCard'
 import SkillBadge from './SkillBadge';
@@ -53,7 +53,7 @@ function About(props) {
             <h1><i class="fas fa-code-branch"></i> My Work</h1>
             <div id="work-button-container">
               <Link class="btn" to="/portfolio" onClick={props.onClick}>Porfolio <i class="fab fa-codepen"></i></Link>
-              <a class="btn" href="../res/docs/michael-koohang-resume.pdf" download="michael-koohang-resume.pdf">
+              <a class="btn" href={require('../res/docs/michael-koohang-resume.pdf')} download="michael-koohang-resume.pdf">
                 Resume <i class="fas fa-file-download"></i>
               </a>
             </div>

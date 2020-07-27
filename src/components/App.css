@@ -30,20 +30,30 @@
   z-index: 1;
 }
 
-.nav .nav-item a {
+.nav-link {
+  font-family: 'Helvetica', 'Arial';
+  border: 1px solid var(--white);
+  font-size: 0.9em;
+  padding: 0.25em 1em;
   color: var(--white);
+  margin-left: 1em;
+  border-radius: 100px;
   font-weight: 500;
+  outline: none;
 }
 
-.nav .nav-item a:hover {
-  color: var(--green);
+.nav-link:hover {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: var(--black);
 }
+
 
 #nav-logo {
   height: 40px;
   width: 40px;
   margin-left: 2em;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 /* Header */
@@ -65,7 +75,7 @@
 }
 
 #subtitle {
-  opacity: 50%;
+  opacity: 0.5;
   font-size: 1.5em;
 }
 
@@ -77,17 +87,18 @@
 
 .social-icon {
   height: 30px;
-  width: 30px;
+  width: auto;
   margin-right: 1.5em;
 }
 
 .social-icon:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 #watermark {
+  font-family: 'Helvetica', 'Arial';
   color: var(--gray);
-  opacity: 3%;
+  opacity: 0.03;
   position: absolute;
   font-size: 12em;
   top: 12px;

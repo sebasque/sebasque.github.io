@@ -26,6 +26,10 @@ section {
   padding: 2em 0;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Major Mono Display';
+}
+
 .card {
   border: 0.5px solid var(--gray);
   border-radius: 0;
@@ -38,7 +42,7 @@ section {
 }
 
 .btn {
-  transition: transform 0.1s ease-in-out;
+  font-family: 'Helvetica', 'Arial';
   background-color: var(--white);
   border: 1px solid var(--black);
   padding: 0.5em 1em;
