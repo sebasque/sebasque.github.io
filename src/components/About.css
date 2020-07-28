@@ -10,11 +10,6 @@
   margin-bottom: 0;
 }
 
-.my-work-card {
-  min-height: 370px;
-  margin-top: 1.75em;
-}
-
 .my-work-badge {
   background-color: var(--green);
   padding: 0.5em 0.75em;

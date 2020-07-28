@@ -1,0 +1,33 @@
+
+.portfolio-subheading {
+  opacity: 0.4;
+}
+
+.portfolio-p {
+  margin-bottom: 2em;
+}
+
+ul {
+  margin-bottom: 2em;
+}
+
+#portfolio-btn {
+  margin: 0;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.img-regular {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  max-width: 45%;
+}
+
+.img-mobile {
+  max-width: 200px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}

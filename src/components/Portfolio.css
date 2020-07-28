@@ -1,0 +1,10 @@
+
+#project-list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+hr {
+  margin-bottom: 2em;
+}

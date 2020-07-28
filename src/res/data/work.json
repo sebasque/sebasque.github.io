@@ -35,6 +35,18 @@
       "type": "Internship",
       "img": "gt.png",
       "alt": "Georgia Tech"
+    },
+    {
+      "title": "Robotics and Intelligent Systems Lab Assistant",
+      "type": "Part Time",
+      "img": "mga.png",
+      "alt": "Middle Georgia State University"
+    },
+    {
+      "title": "Information Technology Tutor",
+      "type": "Part Time",
+      "img": "mga.png",
+      "alt": "Middle Georgia State University"
     }
   ]
 }

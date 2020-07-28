@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: 'Helvetica Neue', 'Arial';
-  background-color: var(--black);
+  background-color: var(--white);
   padding-bottom: 60px;
   height: 100%;
   margin: 0;
@@ -43,8 +43,8 @@ h1, h2, h3, h4 {
 
 .btn {
   font-family: 'Helvetica', 'Arial';
-  background-color: var(--white);
-  border: 1px solid var(--black);
+  background-color: var(--gray);
+  /* border: 1px solid var(--black); */
   padding: 0.5em 1em;
   color: var(--black);
   margin-left: 0.5em;

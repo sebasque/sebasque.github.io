@@ -1,0 +1,25 @@
+
+.portfolio-card {
+  width: auto;
+  display: inline-block;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+
+.portfolio-card .card-body {
+  background-color: var(--gray);
+  color: var(--black);
+  padding: 0.75em 1.25em;
+  border-radius: 10px;
+}
+
+.portfolio-card .card-body-active {
+  background-color: var(--green);
+  color: var(--black);
+  padding: 0.75em 1.25em;
+  border-radius: 10px;
+}
+
+.portfolio-card h6 {
+  margin: 0;
+}
