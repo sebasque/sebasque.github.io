@@ -1,0 +1,41 @@
+
+@import '../../style/color.scss';
+
+.cv {
+  margin-bottom: 3em;
+
+  h1 {
+    margin-top: 1em;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    li {
+      margin-top: 0.25em;
+    }
+  }
+
+  hr {
+    margin-bottom: 1.5em;
+  }
+
+  blockquote {
+    margin: 0;
+    p {
+      margin-top: 0.25em;
+      color: $gray;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: $blue;
+  }
+
+  a:hover {
+    opacity: 0.75;
+  }
+  
+}

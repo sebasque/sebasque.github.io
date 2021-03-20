@@ -1,0 +1,78 @@
+
+@import './style/color.scss';
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Arial';
+  background-color: $white;
+  padding-bottom: 60px;
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  background-color: $white;
+  color: $black;
+  padding: 2em 0;
+}
+
+hr {
+  border: 1px solid $light-gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  padding: 0 3em;
+  margin: auto;
+  max-width: 800px;
+}
+
+.button {
+  font-family: 'Helvetica', 'Arial';
+  text-decoration: none;
+  background-color: $light-gray;
+  padding: 0.75em 0.5em;
+  display: inline-block;
+  color: $black;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  border-radius: 50px;
+  font-weight: 500;
+  min-width: 80px;
+  text-align: center;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 5px 1px $light-gray;
+  background-color: $green;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  
+}
+
+@media only screen and (max-width: 992px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+  
+}

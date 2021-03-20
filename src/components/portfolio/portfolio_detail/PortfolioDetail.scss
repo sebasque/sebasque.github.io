@@ -1,21 +1,15 @@
-
-.portfolio-subheading {
-  opacity: 0.4;
+.portfolio-detail {
+  ul {
+    margin-bottom: 2em;
+    li {
+      font-size: 18px;
+    }
+  }
 }
 
 .portfolio-p {
   margin-bottom: 2em;
-}
-
-ul {
-  margin-bottom: 2em;
-}
-
-#portfolio-btn {
-  margin: 0;
-  margin-top: 0.5em;
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  font-size: 18px;
 }
 
 .img-regular {
