@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import {Switch, Route, HashRouter} from 'react-router-dom';
 import About from '../about/About';
 import Cv from '../cv/Cv';
 import Header from '../header/Header';
@@ -11,7 +11,7 @@ import './App.scss'
 export default function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
       <Switch>
         <Route exact path="/">
@@ -25,6 +25,6 @@ export default function App() {
         </Route>
       </Switch>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -1,31 +1,6 @@
 {
   "portfolio": [
     {
-      "title": "AirNotes",
-      "description": " (In Progress) AirNotes is a productivity app designed to facilitate task-based note taking through voice commands. AirNotes uses Siri Shortcuts to enhance voice interaction capabilities with notes, and works across all Siri-enabled devices.",
-      "tech": [
-        "iOS",
-        "Swift",
-        "SiriKit",
-        "CoreData",
-        "Xcode",
-        "Sketch"
-      ],
-      "platform": "mobile",
-      "impact": "Potential Impact: redefining the way people take notes and amplifying the productivity experience through voice. Actual Impact: the app won 2nd overall in the Convergence Innovation Competition at Georgia Tech",
-      "app": "",
-      "github": "",
-      "youtube": "",
-      "year": 2020,
-      "images": [
-        "airnotes-1.png",
-        "airnotes-2.png",
-        "airnotes-3.png",
-        "airnotes-4.png",
-        "airnotes-5.png"
-      ]
-    },
-    {
       "title": "HikerNet",
       "description": "(In Progress) HikerNet is an Android app built to gather network measurements along hiking trails. The app utilizes Google's FusedLocationProvider API and Mapbox SDKs to facilitate data collection and display. The app sends the measured data to a web application to be stored and viewed/analyzed at a later time. This app is part of research project at Georgia Tech aimed at discovering new techniques for measuring network connectivity in rural areas in order to help increase access to the internet.",
       "tech": [
@@ -91,48 +66,6 @@
       ]
     },
     {
-      "title": "HouseATL",
-      "description": "The HouseATL project was a join project between Georgia Tech and the major housing agencies of Atlanta to maintain and preserve affordable housing data for the city. This involved building a unified database and backend system that could clean and parse through housing data from all agencies partnered on the project. I was responsible for developing the backend system that handled parsing CSV and Excel files from the housing agencies and writing that data to the database.",
-      "tech": [
-        "Python",
-        "Flask",
-        "PostgreSQL",
-        "Docker",
-        "Google Maps API"
-      ],
-      "platform": "web",
-      "impact": "Adopted by the major housing agencies within the city of Atlanta. I also managed to reduce the time complexity of parsing through the entire 2D matrix / spreadsheets from O(n^2) to O(n) by having a hash map of indicies corresponding to the desired columns.",
-      "app": "",
-      "github": "",
-      "youtube": "",
-      "year": 2019,
-      "images": [
-
-      ]
-    },
-    {
-      "title": "DeepScroll",
-      "description": "DeepScroll is a Cocoapods library that allows developers to integrate content-resizable lane scrolling into their apps. The idea is that depending on what lane your finger is scrolling in, the content on the page would dynamically resize to grow or shrink. My partner and I developed this library as a result of our frustrations with Facebook and other social media platforms' infinite scroll features. This project was developed as part of a graduate level UI Software course at Georgia Tech.",
-      "tech": [
-        "iOS",
-        "Swift",
-        "Xcode"
-      ],
-      "platform": "mobile",
-      "impact": "N/A",
-      "app": "https://cocoapods.org/pods/DeepScroll",
-      "github": "https://github.com/parthv21/DeepScroll",
-      "youtube": "",
-      "year": 2019,
-      "images": [
-        "deepscroll-1.jpeg",
-        "deepscroll-2.jpeg",
-        "deepscroll-3.jpeg",
-        "deepscroll-4.png",
-        "deepscroll-5.png"
-      ]
-    },
-    {
       "title": "WWDC19",
       "description": "This Xcode Playground was my submission to the WWDC scholarship program that Apple hosts each year for students to attend their conference. I noticed how Apple was really pushing their privacy marketing at the time, and it seemed to me that not enough people were really taking privacy seriously. This was especially important to me given the myriad of mechanisms that iPhones have in place to protect your data that you may never even notice while using it. So, I decided to create a simple puzzle game that involved solving 3 privacy-focused challenges, each related to a certain aspect of the iPhone that protect's people's privacy. The goal was to have a little fun while simultaneously giving a light introduction and/or reminder to how the iPhone protects users' privacy.",
       "tech": [
@@ -152,96 +85,6 @@
         "wwdc19-2.png",
         "wwdc19-3.png",
         "wwdc19-4.png"
-      ]
-    },
-    {
-      "title": "Dia/Log",
-      "description": "Diabetes tracking app focused on privacy and security. Dia/Log was built with the intention of helping people manage their diabetes in a faster, more efficient way and to establish an open and seamless conversation with primary care physicians. Data logged on the app never leaves the user's phone, and a sleek design with informative graphs and metrics makes tracking your diabetes easier than ever.",
-      "tech": [
-        "iOS",
-        "Swift",
-        "Xcode",
-        "Lottie"
-      ],
-      "platform": "mobile",
-      "impact": "273 all-time app installations and widespread adoption at Mercer University Medical School.",
-      "app": "https://apps.apple.com/us/app/dia-log/id1481853363",
-      "github": "",
-      "youtube": "",
-      "year": 2019,
-      "images": [
-        "dialog-1.png",
-        "dialog-2.png",
-        "dialog-3.png",
-        "dialog-4.png",
-        "dialog-5.png"
-      ]
-    },
-    
-    {
-      "title": "RatWatch",
-      "description": "RatWatch is an SMS chatbot designed for citizens in the city of Atlanta to report rat sightings and evidence. Users can text a phone number and follow a fast, 2 question survey to report a rat sighting or evidence of a rat at a particular location. The app stores the crowdsourced data in a MySQL database and displays them on a web page for analysis and visualization. RatWatch was created as part of the 2018 Civic Data Science Internship Program within the Public Design Workshop at Georgia Tech.",
-      "tech": [
-        "Python",
-        "Flask",
-        "MySQL",
-        "JavaScript",
-        "Twilio API",
-        "Leaflet.js"
-      ],
-      "platform": "web",
-      "impact": "Over 100 reports gathered and garnered interest from city officials.",
-      "app": "https://ratwatch.lmc.gatech.edu/",
-      "github": "https://github.com/ruinanwang/ratchat",
-      "youtube": "",
-      "year": 2018,
-      "images": [
-        "ratwatch-1.png",
-        "ratwatch-2.png",
-        "ratwatch-3.png",
-        "ratwatch-4.png"
-      ]
-    },
-    {
-      "title": "iMap",
-      "description": "iMap is a batch image geocoder that can take any folder of images, extract geocordinates from the images' metadata, gecode those coordintes to an address, and export the results to a CSV file. The tool was created to help researchers within the Public Design Workshop at Georgia Tech easily extract location data from images that they were using on their research projects.",
-      "tech": [
-        "Python",
-        "Tkinter",
-        "Google Maps API"
-      ],
-      "platform": "web",
-      "impact": "Adopted as the defacto image extraction tool by researchers in the Public Design Workshop at Georgia Tech.",
-      "app": "",
-      "github": "https://github.com/michaelkoohang/iMap",
-      "youtube": "",
-      "year": 2018,
-      "images": [
-        "imap-1.png",
-        "imap-2.png",
-        "imap-3.png",
-        "imap-4.png"
-      ]
-    },
-    {
-      "title": "KnightBot",
-      "description": "Knight Bot is a semi-autonomous robot created to interact and communicate with students at Middle Georgia State University. Its chassis is designed and 3D printed completely from scratch, and it's powered by a Raspberry Pi and Google Assistant to provide relevant information to those who interact with it. This project was created as part of an independent study during my time as an undergrad at Middle Georgia State University.",
-      "tech": [
-        "3D Printing",
-        "Rasperry Pi",
-        "Google Assistant API",
-        "Python",
-        "Flask"
-      ],
-      "platform": "robotics",
-      "impact": "Opened opportunity for students and professors to program a fully functional robot with a multitude of sensors and features, which was previously unavailable within the Robotics and Intelligent Systems Lab at Middle Georgia State University.",
-      "app": "",
-      "github": "",
-      "youtube": "https://www.youtube.com/watch?v=6iCM0rdl5tA",
-      "year": 2018,
-      "images": [
-        "knightbot-1.png",
-        "knightbot-2.png"
       ]
     }
   ]

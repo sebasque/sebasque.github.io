@@ -9,11 +9,12 @@ function Portfolio() {
 
   return (
     <div className='portfolio'>
-      <div class="container">
+      <div className="container">
         <div id="project-list">
           {
-            portfolioData.portfolio.map(project => (
+            portfolioData.portfolio.map((project, i) => (
               <PortfolioCard 
+                key={i}
                 info={project} 
                 active={project.title === currentProject.title} 
                 onClick={() => setCurrentProject(project)}

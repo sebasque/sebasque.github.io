@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   padding: 0 3em;
   margin: auto;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .button {
@@ -56,23 +56,4 @@ h1, h2, h3, h4, h5, h6 {
 .button:hover {
   box-shadow: 0px 0px 5px 1px $light-gray;
   background-color: $green;
-}
-
-
-/* Media Queries */
-
-@media only screen and (max-width: 1200px) {
-  
-}
-
-@media only screen and (max-width: 992px) {
-  
-}
-
-@media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: 576px) {
-  
 }

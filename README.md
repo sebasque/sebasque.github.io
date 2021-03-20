@@ -1,4 +1,0 @@
-
-# About
-
-My personal website.
