@@ -34,14 +34,6 @@ function About(props) {
                 and exercising every chance I get. My obsessions include music, Harry Potter,
                 and my work (of course).
                         </p>
-              <hr />
-              <blockquote class="blockquote">
-                <p class="mb-0">
-                  Coding is secondary. It's the people you code for
-                  that matter the most.
-                            </p>
-                <footer class="blockquote-footer">Michael Koohang</footer>
-              </blockquote>
             </div>
           </div>
         </div>
@@ -50,7 +42,7 @@ function About(props) {
       <section>
         <div class="container">
           <div id="my-work-header">
-            <h1><i class="fas fa-code-branch"></i> My Work</h1>
+            <h1>My Work</h1>
             <div id="work-button-container">
               <Link class="btn" to="/portfolio" onClick={props.onClick}>Porfolio <i class="fab fa-codepen"></i></Link>
               <a class="btn" href={require('../res/docs/michael-koohang-resume.pdf')} download="michael-koohang-resume.pdf">
@@ -74,7 +66,7 @@ function About(props) {
 
       <section>
         <div class="container">
-          <h1><i class="fas fa-tools"></i> My Skills</h1>
+          <h1>My Skills</h1>
           <div class="row">
             <div class="col-lg-4 mt-4">
               <h4><i class="far fa-file-code"></i> Languages</h4>

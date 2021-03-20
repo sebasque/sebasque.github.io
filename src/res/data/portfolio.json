@@ -12,7 +12,7 @@
         "Sketch"
       ],
       "platform": "mobile",
-      "impact": "Potential Impact: redefining the way people take notes and amplifying the productivity experience through voice.",
+      "impact": "Potential Impact: redefining the way people take notes and amplifying the productivity experience through voice. Actual Impact: the app won 2nd overall in the Convergence Innovation Competition at Georgia Tech",
       "app": "",
       "github": "",
       "youtube": "",
@@ -48,7 +48,7 @@
     },
     {
       "title": "Yoogle",
-      "description": "(In Progress) Yoogle is text caption search engine for YouTube videos. It let's you search any YouTube video with a transcript for a particular word and lists all the timestamps in the video where that word occurs. Future features include saving timestamp lists as collections and exporting hyperlinked PDF files.",
+      "description": "Yoogle is text caption search engine for YouTube videos. It let's you search any YouTube video with a transcript for a particular word and lists all the timestamps in the video where that word occurs. Future features include saving timestamp lists as collections and exporting hyperlinked PDF files.",
       "tech": [
         "Python",
         "Flask",
@@ -63,7 +63,8 @@
       "youtube": "",
       "year": 2020,
       "images": [
-
+        "yoogle-1.png",
+        "yoogle-2.png"
       ]
     },
     {

@@ -8,7 +8,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link, HashRouter
 } from 'react-router-dom';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
   const [watermarkText, setWatermark] = useState(initialPath);
 
   return (
-    <Router>
+    <HashRouter>
       <div id="header">
         <nav class="nav">
           <li class="nav-item">
@@ -50,12 +50,6 @@ function App() {
             </a>
             <a href="https://www.linkedin.com/in/michael-koohang-5611ba14a/" target="_blank" rel="noopener noreferrer">
               <img class="social-icon" src={require('../res/img/social/linkedin.png')} alt="LinkeIn logo" />
-            </a>
-            <a href="https://medium.com/@michaelkoohang" target="_blank" rel="noopener noreferrer">
-              <img class="social-icon" src={require('../res/img/social/medium.png')} alt="Medium logo" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCx9drQCE9c7VrpHZWl10JqQ?view_as=subscriber" target="_blank" rel="noopener noreferrer">
-              <img class="social-icon" src={require('../res/img/social/youtube.png')} alt="YouTube logo" />
             </a>
           </div>
         </div>
@@ -82,7 +76,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </Router>
+    </HashRouter>
   );
 }
 
