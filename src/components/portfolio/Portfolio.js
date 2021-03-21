@@ -11,7 +11,7 @@ export default function Portfolio() {
 
   return (
     <div className='portfolio'>
-      <div className="project-list container">
+      <div className='project-list container'>
         {
          map(projects, project => (
             <Project project={project} />
