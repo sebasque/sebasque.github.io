@@ -1,0 +1,73 @@
+[
+  {
+    "title": "HikerNet",
+    "info": "Crowdsourcing network connectivity on hiking trails.",
+    "tech": [
+      "Swift",
+      "Kotlin",
+      "JavaScript",
+      "React",
+      "MariaDB"
+    ],
+    "link": "https://hikernet.rnoc.gatech.edu"
+  },
+  {
+    "title": "Grawnola",
+    "info": "Visualizing climate change and reducing your carbon footprint.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "D3"
+    ],
+    "link": "https://grawnola.herokuapp.com"
+  },
+  {
+    "title": "Yoogle",
+    "info": "Search engine for YouTube video captions.",
+    "tech": [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "YouTube API"
+    ],
+    "link": "https://yoogle.app"
+  },
+  {
+    "title": "Birthday Memories",
+    "info": "Video/photo feed for birthdays or special occasions.",
+    "tech": [
+      "React",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Lottie"
+    ],
+    "link": "https://github.com/michaelkoohang/BirthdayMemories"
+  },
+  {
+    "title": "DeepScroll",
+    "info": "Cocoapod library for battling infinite scroll with cell-resizing scroll lanes.",
+    "tech": [
+      "Swift",
+      "UIKit",
+      "Xcode",
+      "Cocoapods"
+    ],
+    "link": "https://github.com/michaelkoohang/DeepScroll"
+  },
+  {
+    "title": "WWDC19",
+    "info": "Privacy puzzle game for Apple WWDC 2019 scholarship.",
+    "tech": [
+      "Swift",
+      "UIKit",
+      "Xcode",
+      "Playgrounds",
+      "Sketch"
+    ],
+    "link": "https://github.com/michaelkoohang/WWDC2019"
+  }
+]

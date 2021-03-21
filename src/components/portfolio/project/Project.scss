@@ -1,0 +1,51 @@
+
+@import '../../../style/color.scss';
+
+.project {
+  margin: 1em;
+  border: 1px solid $medium-gray;
+  min-height: 200px;
+  border-radius: 12px;
+  padding: 1.75em 2em;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .info {
+    margin-top: 0.75em;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .tech-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1em 0 0 0;
+  }
+
+  .tech {
+    margin: 0;
+    padding: 0.5em 1.25em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid $medium-gray;
+    background: linear-gradient(217deg, $blue, $red 100%);
+    color: transparent;
+    background-clip: text;
+  }
+}
+
+.project:hover {
+  border: 1px solid $blue;
+}
+
+.project-link {
+  text-decoration: none;
+  color: $black;
+}

@@ -7,7 +7,7 @@ export default function Cv() {
 
     useEffect(() => {
       window.scrollTo(0,0);
-      const privacyPath = require("../../res/docs/cv.md");
+      const privacyPath = require("../../res/cv.md");
 
       fetch(privacyPath)
         .then(response => response.text())

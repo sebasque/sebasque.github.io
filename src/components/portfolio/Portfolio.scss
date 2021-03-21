@@ -4,12 +4,13 @@
   margin-bottom: 2em;
 }
 
-#project-list {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+.project-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-hr {
-  margin-bottom: 2em;
+@media only screen and (max-width: 700px) {
+  .project-list {
+    grid-template-columns: auto;
+  }
 }

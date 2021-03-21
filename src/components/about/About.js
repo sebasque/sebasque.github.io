@@ -15,15 +15,13 @@ export default function About() {
           <p className="text">
             I'm an engineer by trade and a designer at heart. I love using the technologies
             around me to improve people's lives, and I enjoy teaching computer science to others
-            while making my own personal apps. I also love playing soccer, running, and exercising every
-            chance I get. My obsessions include music, movies, and my work <span role="img" aria-label="Nerd emoji">🤓</span>.
+            while making my own personal apps. I also love playing soccer, running, and exercising every 
+            chance I get. My obsessions include music, movies, and my work.
           </p>
           <a className='button' href='#/cv'>CV</a>
           <a className='button' href='#/portfolio'>Portfolio</a>
         </div>
       </section>
-
     </div>
-
   );
 }

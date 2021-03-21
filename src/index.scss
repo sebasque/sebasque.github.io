@@ -41,7 +41,8 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   font-family: 'Helvetica', 'Arial';
   text-decoration: none;
-  background-color: $light-gray;
+  background-color: $white;
+  border: 1px solid $medium-gray;
   padding: 0.75em 0.5em;
   display: inline-block;
   color: $black;
@@ -54,8 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 5px 1px $light-gray;
-  background-color: $green;
+  background: linear-gradient(217deg, $blue, $red 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 @media only screen and (max-width: 576px) {
