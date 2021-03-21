@@ -14,13 +14,13 @@ export default function App() {
     <HashRouter>
       <Header/>
       <Switch>
-        <Route exact path="/">
+        <Route exact path='/'>
           <About/>
         </Route>
-        <Route path="/portfolio">
+        <Route path='/portfolio'>
           <Portfolio />
         </Route>
-        <Route path="/cv">
+        <Route path='/cv'>
           <Cv/>
         </Route>
       </Switch>

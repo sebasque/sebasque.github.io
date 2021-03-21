@@ -1,20 +1,20 @@
 import React, {useEffect, useState} from 'react';
-import marked from "marked";
+import marked from 'marked';
 import './Cv.scss';
 
 export default function Cv() {
   const [markdown, setMarkdown] = useState('');
 
-    useEffect(() => {
-      window.scrollTo(0,0);
-      const privacyPath = require("../../res/cv.md");
+  useEffect(() => {
+    window.scrollTo(0,0);
+    const privacyPath = require('../../res/cv.md');
 
-      fetch(privacyPath)
-        .then(response => response.text())
-        .then(text => {
-          setMarkdown(marked(text))
-        });
-    }, [])
+    fetch(privacyPath)
+      .then(response => response.text())
+      .then(text => {
+        setMarkdown(marked(text))
+      });
+  }, [])
 
   return (
     <div className='cv container'>
