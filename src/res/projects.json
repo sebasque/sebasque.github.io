@@ -30,8 +30,7 @@
       "Python",
       "Flask",
       "HTML",
-      "CSS",
-      "YouTube API"
+      "CSS"
     ],
     "link": "https://yoogle.app"
   },
@@ -42,8 +41,7 @@
       "React",
       "HTML",
       "CSS",
-      "JavaScript",
-      "Lottie"
+      "JavaScript"
     ],
     "link": "https://github.com/michaelkoohang/BirthdayMemories"
   },
@@ -52,9 +50,7 @@
     "info": "Cocoapod library for battling infinite scroll with cell-resizing scroll lanes.",
     "tech": [
       "Swift",
-      "UIKit",
-      "Xcode",
-      "Cocoapods"
+      "UIKit"
     ],
     "link": "https://github.com/michaelkoohang/DeepScroll"
   },
@@ -63,10 +59,7 @@
     "info": "Privacy puzzle game for Apple WWDC 2019 scholarship.",
     "tech": [
       "Swift",
-      "UIKit",
-      "Xcode",
-      "Playgrounds",
-      "Sketch"
+      "UIKit"
     ],
     "link": "https://github.com/michaelkoohang/WWDC2019"
   }
