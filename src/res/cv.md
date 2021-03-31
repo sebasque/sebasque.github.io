@@ -69,6 +69,10 @@ Xcode, VS Code, REST, Postman, AWS, Jira, Sketch, Miro, Photoshop
 
 # Leadership & Awards 🦸🏼‍♂️
 ---
+### Marshall D. Williamson Fellowship Award
+> [Georgia Institute of Technology](https://www.cc.gatech.edu/)
+- Awarded to a well-rounded, second-year Master's student who best embodies Marshall’s values of academic excellence and leadership 
+
 ### Tech Lead 
 > [Georgia Tech iOS Club](https://gtios.club) | September 2020 - Present
 -  Created YouTube tutorials on iOS development and provided technical/design guidance to members
