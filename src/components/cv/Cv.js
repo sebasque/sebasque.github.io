@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import marked from 'marked';
+import ReactMarkdown from 'react-markdown';
 import './Cv.scss';
 
 export default function Cv() {
@@ -7,18 +7,18 @@ export default function Cv() {
 
   useEffect(() => {
     window.scrollTo(0,0);
-    const privacyPath = require('../../res/cv.md');
+    const cvPath = require('../../res/cv.md');
 
-    fetch(privacyPath)
+    fetch(cvPath)
       .then(response => response.text())
       .then(text => {
-        setMarkdown(marked(text))
+        setMarkdown(text)
       });
   }, [])
 
   return (
     <div className='cv container'>
-      <div dangerouslySetInnerHTML={{__html: markdown}}></div>
+      <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
   )
 }
