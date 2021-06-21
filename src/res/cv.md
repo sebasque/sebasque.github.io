@@ -1,17 +1,17 @@
-# Experience 👨🏼‍💻
+## Experience 👨🏼‍💻
 ---
-### Software Engineer
-> [Nike](https://purpose.nike.com) | September 2021
+### Incoming Software Engineer
+> [Nike](https://purpose.nike.com) | September 2021 - Present
   - Starting September 7th
 
 ### Graduate Research Assistant 
-> [Georgia Institute of Technology](https://www.gatech.edu) | August 2019 – Present
-  - Designed and developed an Android and iOS app to gather network measurement data on hiking trails
-  -  Designed and developed a React/Express web app to map and visualize the network measurement data
+> [Georgia Institute of Technology](https://www.gatech.edu) | August 2019 – May 2021
+  - Designed and developed an Android/iOS app to gather network connectivity data on hiking trails
+  - Designed and developed a React/Express web app to map and visualize the network connectivity data
 
 ### Global Technology Intern 
 > [Nike](https://purpose.nike.com) | June 2020 - August 2020
-  -  Enabled a new digital consumer touchpoint by creating a backend service that lets Nike deliver emails to athletes after they complete a run on the Nike Run Club app
+  -  Created a backend service that lets Nike deliver emails to athletes after they complete a run on the Nike Run Club app
   -  Enhanced Nike's research model through real-time delivery of feedback surveys to over 2K+ study participants
   -  Placed 2nd out of 29 teams in the internal hackathon with a project focused on sustainability
 
@@ -35,16 +35,16 @@
 
 ### Robotics and Intelligent Systems Lab Assistant
 > [Middle Georgia State University](https://www.mga.edu) | April 2017 – December 2018
-- Built autonomous robot using Raspberry Pi, sonic sensor, and 3D printed hardware
+- Built autonomous robot using a Raspberry Pi, sonic sensor, and 3D printed hardware
 - Designed hardware components from scratch using Blender
-- Integrated Google Assistant API using Python through Flask webhook
+- Integrated the Google Assistant API using Python through a Flask webhook
 
 ### Information Technology Tutor
 > [Middle Georgia State University](https://www.mga.edu) | August 2017 – December 2018
 - Tutored students in Python, Java, SQL, databases, HTML, CSS, JavaScript, data structures, algorithms, software engineering, and computer networking
 - Adapted teaching style to each individual’s learning style and utilized metaphors and real-world examples to simplify abstract concepts
 
-# Education 🎓
+## Education 🎓
 ---
 ### M.S. in Computer Science 
 > [Georgia Institute of Technology](https://www.gatech.edu) | August 2019 – May 2021
@@ -56,18 +56,18 @@
   -  Concentration in Software Engineering (GPA: 4.0 — graduated at 18 years old)
   -  Relevant Coursework: Data Structures and Algorithms, Database Principles, Software Engineering, Software Security, Operating Systems, Computer Architecture, Software Testing & QA
 
-# Skills 🛠
+## Skills 🛠
 ---
 ### Languages
-Python, Swift, HTML, CSS, JavaScript, Java, SQL
+Python, Swift, JavaScript, Java, SQL, HTML, CSS
 
 ### Frameworks
-Flask, React, Node, Express, UIKit, Core Data, MySQL, MongoDB, git, zsh, Linux
+Flask, React, Node, Express, UIKit, Core Data, MySQL, PostgreSQL, MongoDB, git, zsh, Linux
 
 ### Software/Services
 Xcode, VS Code, REST, Postman, AWS, Jira, Sketch, Miro, Photoshop
 
-# Leadership & Awards 🦸🏼‍♂️
+## Leadership & Awards 🦸🏼‍♂️
 ---
 ### Marshall D. Williamson Fellowship Award
 > [Georgia Institute of Technology](https://www.cc.gatech.edu/) | May 2021
@@ -79,7 +79,8 @@ Xcode, VS Code, REST, Postman, AWS, Jira, Sketch, Miro, Photoshop
 
 ### Section Leader
 > [Stanford University](https://www.stanford.edu) | April 2020 - May 2020
--  Taught in Stanford University's Code in Place program for learning programming during COVID-19
+- Part of a teaching team for Code in Place, offered by Stanford during COVID-19 pandemic, with 10,000 global students and 900 volunteer teachers participating from around the world.
+- Prepared and taught a weekly discussion section of 10-12 students to supplement professors’ lectures in a 5-week introductory online Python programming course based on material from the first half of Stanford’s introductory programming course, CS106A.
 
 ### WWDC19
 > [Apple](https://www.apple.com) | June 2019
@@ -92,7 +93,7 @@ Xcode, VS Code, REST, Postman, AWS, Jira, Sketch, Miro, Photoshop
 
 ### USG Academic Honoree Day Scholar
 > [University System of Georgia](https://usg.edu) | 2019
-- Selected as the Academic Recognition Day Scholar from Middle Georgia State University. The award is meant to recognize one student from each university within the state of Georgia that demonstrates high academic achievement, makes significant contributions to their local community, and possesses strong leadership qualities.
+- Selected as the Academic Recognition Day Scholar from Middle Georgia State University. The award is meant to recognize one student from each university within the state of Georgia that demonstrates high academic achievement, makes significant contributions to their local community, and possesses strong leadership qualities
 
 ### Collegiate Cup Hackathon Winner
 > [Georgia Institute of Technology](https://www.cc.gatech.edu/news/617967/collegiate-cup-2019-hackathon-equity-mind) | 2019
