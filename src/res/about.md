@@ -10,5 +10,5 @@ Realizing my passion for design and what I later came to know as "HCI," I gradua
 
 Now graduated with my master's, I find myself with a mix of engineering, design, teaching, and research experience that I'm excited to apply in industry. I'm able to work very effectively in diverse, innovative, and fast-paced teams, tackle multi-dimensional problems, and communicate effectively across a variety of disciplines. My skills include rapid design (human-centered design, thematic analysis, user personas), prototyping (Sketch, Miro), and engineering of full stack and mobile apps (iOS, React, Node), and my foothold in both design and engineering allows me to bridge the gap between them and increase efficiency within teams that involve both disciplines. 
 
-Outside of work, I love playing soccer, DJing, and volunteering to teach math and computer science. You'll always see me with pair of headphones on hand or on head 😉  Feel free to check out my portfolio and reach out anytime! I'd love to chat 😁
+Outside of work, I love playing soccer, DJing, and volunteering to teach math and computer science. You'll always see me with pair of headphones on hand or on head. Feel free to check out my portfolio and reach out anytime! I'd love to chat!
         

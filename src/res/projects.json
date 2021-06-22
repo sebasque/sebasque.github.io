@@ -1,5 +1,17 @@
 [
   {
+    "title": "SeguraCruz",
+    "info": "Crowdsourcing vehicle accident reports in Santa Cruz, Bolivia.",
+    "tech": [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "MariaDB",
+      "Twilio"
+    ],
+    "link": "https://seguracruz.rnoc.gatech.edu"
+  },
+  {
     "title": "HikerNet",
     "info": "Crowdsourcing network connectivity on hiking trails.",
     "tech": [
@@ -15,8 +27,7 @@
     "title": "Grawnola",
     "info": "Visualizing climate change and reducing your carbon footprint.",
     "tech": [
-      "HTML",
-      "CSS",
+      "HTML/CSS",
       "JavaScript",
       "React",
       "D3"
@@ -29,8 +40,7 @@
     "tech": [
       "Python",
       "Flask",
-      "HTML",
-      "CSS"
+      "HTML/CSS"
     ],
     "link": "https://yoogle.app"
   },
@@ -39,8 +49,7 @@
     "info": "Video/photo feed for birthdays or special occasions.",
     "tech": [
       "React",
-      "HTML",
-      "CSS",
+      "HTML/CSS",
       "JavaScript"
     ],
     "link": "https://github.com/michaelkoohang/BirthdayMemories"
@@ -62,5 +71,17 @@
       "UIKit"
     ],
     "link": "https://github.com/michaelkoohang/WWDC2019"
+  },
+  {
+    "title": "RatWatch",
+    "info": "Crowdsourcing rat evidence and sightings in the city of Atlanta.",
+    "tech": [
+      "Python",
+      "Flask",
+      "HTML/CSS",
+      "MySQL",
+      "Twilio"
+    ],
+    "link": "https://ratwatch.lmc.gatech.edu"
   }
 ]
