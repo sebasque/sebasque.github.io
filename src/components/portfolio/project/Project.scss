@@ -3,11 +3,14 @@
 
 .project {
   border: 1px solid $medium-gray;
-  min-height: 225px;
+  min-height: 250px;
   border-radius: 8px;
   padding: 1.75em 2em;
   transition: all 0.3s;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .title {
     margin-bottom: 0;
@@ -24,6 +27,12 @@
     font-weight: 500;
     color: $blue;
     margin: 1em 0 0 0;
+  }
+
+  .updated {
+    font-weight: 300;
+    color: $gray;
+    margin: 0.5em 0 0 0;
   }
 }
 

@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://michaelkoohang.github.io",
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -14,11 +17,12 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "readline": "^1.3.0",
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "cp CNAME ./build/CNAME && gh-pages -b prod -d build",
+    "deploy": "cp CNAME ./build/CNAME && node deploy.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
