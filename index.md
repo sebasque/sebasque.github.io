@@ -9,7 +9,7 @@ permalink: /
 
 <p class="intro-lede">I design and build mobile apps — and I help other teams do the same.</p>
 
-I'm an iOS software engineer at [Waymo](https://waymo.com), where I work on the booking user experience. Before that I worked on consumer apps at companies like [Nike](https://www.nike.com), [Strava](https://www.strava.com), and [DoorDash](https://www.doordash.com).
+I'm an iOS software engineer at [Waymo](https://waymo.com), where I work on the booking user experience. I have over 5 years of industry experience working on consumer apps at companies like [Nike](https://www.nike.com), [Strava](https://www.strava.com), and [DoorDash](https://www.doordash.com), and over 10 years of experience in iOS engineering.
 
 ## Elsewhere
 
