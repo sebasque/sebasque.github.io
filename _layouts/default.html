@@ -11,6 +11,9 @@
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
 
+  {%- comment -%} Decorative accent line. Move `top` to `bottom` in main.css to flip it. {%- endcomment -%}
+  <div class="accent-bar" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav">

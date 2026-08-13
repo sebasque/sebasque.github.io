@@ -83,6 +83,44 @@ a:hover { color: var(--accent); }
   border-radius: 2px;
 }
 
+/* ---------- accent bar ---------- */
+
+/* A hairline pinned to the viewport with an accent glow travelling across it.
+   Swap `top: 0` for `bottom: 0` to move it to the foot of the page. */
+.accent-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 50;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--rule);
+}
+
+.accent-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  /* `alternate` reverses each pass, so the glow travels back and forth. */
+  animation: accent-sweep 5s ease-in-out infinite alternate;
+}
+
+@keyframes accent-sweep {
+  from { transform: translateX(-120%); }
+  to   { transform: translateX(370%); }
+}
+
+/* Decoration only — hold it still for anyone who asked for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  .accent-bar::after { animation: none; opacity: 0.5; transform: translateX(0); width: 100%; }
+}
+
 /* ---------- header / nav ---------- */
 
 .site-header,
@@ -602,6 +640,7 @@ h2.year-heading:first-of-type { margin-top: 0; }
   .site-footer,
   .site-nav,
   .post-nav,
+  .accent-bar,
   .skip-link { display: none !important; }
 
   main { margin: 0; max-width: none; }
