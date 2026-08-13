@@ -4,7 +4,7 @@ nav: true
 permalink: /consulting/
 ---
 
-I take on freelance and contract work on iOS and Android projects. That usually looks like one of these:
+I take on freelance and contract mobile development projects. That usually looks like one of these:
 
 1. **Starting zero to one**
    Taking an app from nothing to shipped — architecture, tooling, CI, and the first release to the App Store and Play Store.
