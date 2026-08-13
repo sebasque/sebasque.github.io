@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#
+# Commit everything and push it live. GitHub Actions does the rest.
+#
+#   ./publish                      # uses a default commit message
+#   ./publish "Add post on X"      # uses your message
+#
+set -euo pipefail
+
+cd "$(dirname "$0")"
+
+if [ -z "$(git status --porcelain)" ]; then
+  echo "Nothing to publish — no changes."
+  exit 0
+fi
+
+echo "Changes to publish:"
+git status --short
+echo
+
+msg="${1:-Update site ($(date +%Y-%m-%d))}"
+
+git add -A
+git commit -m "$msg"
+git push
+
+echo
+echo "Pushed. Watch the build:"
+echo "  https://github.com/$(git config --get remote.origin.url \
+  | sed -E 's#(git@github.com:|https://github.com/)##; s#\.git$##')/actions"
+echo
+echo "It usually goes live in about a minute."

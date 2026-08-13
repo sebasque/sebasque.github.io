@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  {%- seo -%}
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      {%- assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+      {%- for p in nav_pages -%}
+        {%- comment -%} Posts and the tag index both count as "Blog" for the nav. {%- endcomment -%}
+        {%- assign current = false -%}
+        {%- if page.url == p.url -%}
+          {%- assign current = true -%}
+        {%- elsif p.url == '/blog/' and page.layout == 'post' -%}
+          {%- assign current = true -%}
+        {%- elsif p.url == '/blog/' and page.url == '/tags/' -%}
+          {%- assign current = true -%}
+        {%- endif -%}
+        <a href="{{ p.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ p.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </header>
+
+  <main id="content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</p>
+    <p class="links">
+      {%- if site.social.github %}<a href="https://github.com/{{ site.social.github }}">GitHub</a>{% endif -%}
+      {%- if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a>{% endif -%}
+      {%- if site.social.mastodon %}<a rel="me" href="{{ site.social.mastodon }}">Mastodon</a>{% endif -%}
+      {%- if site.social.bluesky %}<a href="https://bsky.app/profile/{{ site.social.bluesky }}">Bluesky</a>{% endif -%}
+      {%- if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif -%}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </p>
+  </footer>
+</body>
+</html>

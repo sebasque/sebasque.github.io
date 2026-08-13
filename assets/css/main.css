@@ -1,0 +1,663 @@
+/* ============================================================
+   Minimal typographic theme.
+   Colors live in the two blocks below — change them there.
+   ============================================================ */
+
+:root {
+  --bg:        #fdfcfa;
+  --text:      #1c1b19;
+  --muted:     #6b675f;
+  --rule:      #e6e2da;
+  --accent:    #9c4221;
+  --code-bg:   #f4f1ea;
+  --mark:      #fbf0d9;
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Charter, Georgia, serif;
+  --sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --measure: 36rem;  /* reading column */
+  --page:    40rem;  /* header, footer, and full-width blocks */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:      #141312;
+    --text:    #e9e5dd;
+    --muted:   #9a948a;
+    --rule:    #2c2926;
+    --accent:  #e8926b;
+    --code-bg: #1e1c1a;
+    --mark:    #3a3016;
+  }
+}
+
+/* ---------- base ---------- */
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 40rem) {
+  body { font-size: 1.125rem; }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--bg);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--rule);
+  z-index: 10;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+a:hover { color: var(--accent); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- header / nav ---------- */
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--page);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 2.5rem 0 2rem;
+}
+
+.site-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+}
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.site-nav a:hover { color: var(--accent); }
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.3em;
+}
+
+/* ---------- typography ---------- */
+
+.prose { max-width: var(--measure); }
+
+/* Three levels, deliberately different in kind rather than just size:
+   page title (large serif) → section label (small sans caps) → body (serif). */
+
+.page-title,
+.prose h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+}
+
+/* Direct children only, so post-list / work-entry / tag-group headings,
+   which are nested inside their own wrappers, keep their own styles. */
+.prose > h2 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 3.25rem 0 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Inside a post, h2 is a real heading again — labels would be wrong at
+   long-form reading lengths. */
+.post > h2 {
+  font-family: var(--serif);
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text);
+  margin: 2.75rem 0 0.75rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.prose h3 {
+  font-size: 1.125rem;
+  margin: 2rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin: 0 0 1.25rem;
+}
+
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose li::marker { color: var(--muted); }
+
+.prose blockquote {
+  margin: 1.75rem 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--rule);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+.prose mark { background: var(--mark); color: inherit; }
+
+.prose img,
+.prose video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
+figure {
+  margin: 2rem 0;
+}
+figure figcaption {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Let wide images breathe past the text measure on big screens. */
+@media (min-width: 56rem) {
+  figure.wide {
+    width: var(--page);
+    margin-inline: calc((var(--measure) - var(--page)) / 2);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  margin: 1.5rem 0;
+}
+th, td {
+  text-align: left;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+th { font-weight: 600; }
+
+/* Tables and code scroll inside themselves, never the page. */
+.table-scroll { overflow-x: auto; }
+
+/* ---------- code ---------- */
+
+code, kbd, pre, samp {
+  font-family: var(--mono);
+  font-size: 0.875em;
+}
+
+:not(pre) > code {
+  background: var(--code-bg);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1rem 1.1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  line-height: 1.55;
+  margin: 1.5rem 0;
+  tab-size: 2;
+}
+pre code {
+  background: none;
+  padding: 0;
+  white-space: pre;
+}
+.highlight { margin: 1.5rem 0; }
+.highlight pre { margin: 0; }
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.footnotes ol { margin-bottom: 0; }
+
+/* ---------- home ---------- */
+
+.intro-lede {
+  font-size: 1.3125rem;
+  line-height: 1.45;
+  color: var(--text);
+  margin: -0.5rem 0 1.5rem;
+  text-wrap: balance;
+}
+
+/* Everything after the lede steps down to secondary. */
+.intro-lede + p { color: var(--muted); }
+
+/* ---------- link list (the "Elsewhere" block) ---------- */
+
+/* Reads as navigation, not prose: destination first, description after. */
+ul.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.link-list li::marker { content: none; }
+
+.link-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.6rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--rule);
+  margin: 0;
+}
+.link-list li:last-child { border-bottom: 0; }
+
+.link-list a {
+  font-weight: 600;
+  text-decoration: none;
+  flex: none;
+}
+.link-list a:hover { text-decoration: underline; }
+
+.link-list .note {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+/* ---------- numbered pillars (the consulting list) ---------- */
+
+ol.pillars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: pillar;
+}
+ol.pillars li::marker { content: none; }
+
+.pillars li {
+  counter-increment: pillar;
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 0 0 1.75rem;
+}
+.pillars li:last-child { margin-bottom: 0; }
+
+/* Zero-padded numeral, set small and in the accent — structure without weight. */
+.pillars li::before {
+  content: counter(pillar, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+/* The bold run-in becomes its own line — this is the hierarchy fix. */
+.pillars li strong {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.pillars li {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 30rem) {
+  .pillars li { padding-left: 1.9rem; }
+}
+
+/* ---------- post list ---------- */
+
+/* Element-qualified so it beats `.prose ul`'s indent. */
+ul.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.post-list li::marker { content: none; }
+/* No per-item rules — the year heading is the only divider the list needs. */
+.post-list li {
+  padding: 0 0 1.5rem;
+  margin: 0;
+}
+.post-list li:last-child { padding-bottom: 0; }
+.post-list h2 {
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text);
+}
+.post-list h2 a { text-decoration: none; }
+.post-list h2 a:hover { text-decoration: underline; }
+.post-list .excerpt {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.post-meta {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: baseline;
+}
+
+h2.year-heading {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1rem;
+  font-weight: 600;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+h2.year-heading:first-of-type { margin-top: 0; }
+
+/* ---------- tags ---------- */
+
+.tag-list { display: inline-flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.tag {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  padding: 0.1rem 0.55rem;
+  line-height: 1.6;
+}
+.tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.tag-index { margin-bottom: 2.5rem; }
+
+.tag-group { margin-bottom: 2.5rem; }
+.tag-group h2 {
+  margin: 0 0 0.75rem;
+  scroll-margin-top: 1.5rem;
+}
+.tag-group .count {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ---------- post ---------- */
+
+.post-header { margin-bottom: 2rem; }
+.post-header .page-title { margin-bottom: 0.6rem; }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: var(--measure);
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9375rem;
+}
+.post-nav a {
+  text-decoration: none;
+  max-width: 45%;
+}
+.post-nav .next { text-align: right; margin-left: auto; }
+.post-nav span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+.post-nav a:hover { text-decoration: underline; }
+
+/* ---------- portfolio ---------- */
+
+.work-entry {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.work-entry:first-of-type { border-top: 1px solid var(--rule); margin-top: 2rem; }
+
+.work-entry h2 {
+  font-family: var(--serif);
+  margin: 0;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text);
+}
+
+/* Platform / year / client / status line under a project title. */
+.work-entry .where {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin: 0.2rem 0 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+}
+
+/* For "Coming soon", "Archived", and the like. */
+.work-entry .where .status {
+  color: var(--accent);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+}
+
+/* Descriptions step down to secondary, matching the consulting pillars. */
+.work-entry > p {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+.work-entry > p:last-child { margin-bottom: 0; }
+.work-entry > p.where { font-size: 0.8125rem; }
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  margin-top: 5rem;
+  padding: 1.75rem 0 3rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.site-footer p { margin: 0; }
+.site-footer .links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { color: var(--accent); text-decoration: underline; }
+
+/* ============================================================
+   Print — no PDF button, but Cmd+P on any page should still
+   come out black-on-white without the nav and footer.
+   ============================================================ */
+
+@media print {
+  :root {
+    --bg: #fff;
+    --text: #000;
+    --muted: #444;
+    --rule: #ccc;
+    --accent: #000;
+    --code-bg: #f4f4f4;
+    --measure: 100%;
+    --page: 100%;
+  }
+
+  body {
+    padding: 0;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .site-header,
+  .site-footer,
+  .site-nav,
+  .post-nav,
+  .skip-link { display: none !important; }
+
+  main { margin: 0; max-width: none; }
+  .prose { max-width: none; }
+
+  .page-title { font-size: 20pt; margin-bottom: 0.5rem; }
+  .prose h2 {
+    font-size: 12pt;
+    margin: 1.1rem 0 0.4rem;
+  }
+  .work-entry { margin-bottom: 1rem; break-inside: avoid; }
+
+  a { text-decoration: none; color: #000; }
+  /* Print the URL after external links so a printed page stays useful. */
+  .prose a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #555;
+    word-break: break-all;
+  }
+
+  @page { margin: 0.6in; }
+}
+
+/* ---------- rouge syntax highlighting ---------- */
+
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #8a8a8a; font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #9c4221; font-weight: 600; }
+.highlight .kt { color: #7a5c1e; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #2c6e49; }
+.highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il { color: #7a5c1e; }
+.highlight .n, .highlight .nv, .highlight .nx { color: inherit; }
+.highlight .nf, .highlight .nd { color: #2a5db0; }
+.highlight .nc, .highlight .nn { color: #7a5c1e; font-weight: 600; }
+.highlight .nb, .highlight .bp { color: #2a5db0; }
+.highlight .nt { color: #9c4221; }
+.highlight .na { color: #2a5db0; }
+.highlight .o, .highlight .ow, .highlight .p { color: #6b675f; }
+.highlight .gd { color: #a11; background: #fee; }
+.highlight .gi { color: #171; background: #efe; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: 600; }
+.highlight .err { color: #a11; }
+
+@media (prefers-color-scheme: dark) {
+  .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #7d766c; }
+  .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #e8926b; }
+  .highlight .kt { color: #d7ba7d; }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #8fbf7f; }
+  .highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il { color: #d7ba7d; }
+  .highlight .nf, .highlight .nd { color: #82aaff; }
+  .highlight .nc, .highlight .nn { color: #d7ba7d; }
+  .highlight .nb, .highlight .bp { color: #82aaff; }
+  .highlight .nt { color: #e8926b; }
+  .highlight .na { color: #82aaff; }
+  .highlight .o, .highlight .ow, .highlight .p { color: #9a948a; }
+  .highlight .gd { color: #f88; background: #3a1e1e; }
+  .highlight .gi { color: #8d8; background: #1e3a1e; }
+}

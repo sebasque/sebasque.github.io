@@ -1,0 +1,46 @@
+---
+title: Tags
+permalink: /tags/
+---
+
+{%- comment -%}
+  No plugin needed. Collect every tag off every post, dedupe, sort, then look
+  each one up in site.tags. Each group gets an id so /tags/#some-tag deep-links.
+{%- endcomment -%}
+
+{%- assign all_tags = "" | split: "" -%}
+{%- for post in site.posts -%}
+  {%- if post.tags -%}
+    {%- assign all_tags = all_tags | concat: post.tags -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign tag_names = all_tags | uniq | sort_natural -%}
+
+{%- if tag_names.size == 0 %}
+<p>No tags yet. Add a <code>tags:</code> line to a post's front matter and they'll show up here.</p>
+{%- else %}
+
+<p class="tag-index tag-list">
+  {%- for name in tag_names -%}
+  {%- assign tagged = site.tags[name] -%}
+  <a class="tag" href="#{{ name | slugify }}">{{ name }} <span aria-hidden="true">·</span> {{ tagged.size }}</a>
+  {%- endfor -%}
+</p>
+
+{%- for name in tag_names %}
+{%- assign tagged = site.tags[name] %}
+<section class="tag-group">
+  <h2 id="{{ name | slugify }}">{{ name }} <span class="count">{{ tagged.size }} post{% if tagged.size != 1 %}s{% endif %}</span></h2>
+  <ul class="post-list">
+    {%- for post in tagged %}
+    <li>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </p>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{%- endif %}

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="prose post">
+  <header class="post-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- if page.tags and page.tags.size > 0 %}
+      <span class="tag-list">
+        {%- for tag in page.tags -%}
+          <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+        {%- endfor -%}
+      </span>
+      {%- endif %}
+    </p>
+  </header>
+
+  {{ content }}
+</article>
+
+{%- assign posts = site.posts -%}
+{%- for p in posts -%}
+  {%- if p.url == page.url -%}
+    {%- assign idx = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign newer_idx = idx | minus: 1 -%}
+{%- assign older_idx = idx | plus: 1 -%}
+{%- assign newer = posts[newer_idx] -%}
+{%- assign older = posts[older_idx] -%}
+
+{%- comment -%} Skip the whole block on a lone post, or it's just an empty rule. {%- endcomment -%}
+{%- assign has_newer = false -%}
+{%- if idx > 0 and newer -%}{%- assign has_newer = true -%}{%- endif -%}
+
+{%- if has_newer or older -%}
+<nav class="post-nav">
+  {%- if has_newer -%}
+    <a class="prev" href="{{ newer.url | relative_url }}"><span>Newer</span>{{ newer.title }}</a>
+  {%- else -%}<span></span>{%- endif -%}
+  {%- if older -%}
+    <a class="next" href="{{ older.url | relative_url }}"><span>Older</span>{{ older.title }}</a>
+  {%- endif -%}
+</nav>
+{%- endif -%}

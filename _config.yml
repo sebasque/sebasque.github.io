@@ -1,0 +1,63 @@
+# ─────────────────────────────────────────────────────────────
+#  Site settings — edit these first.
+# ─────────────────────────────────────────────────────────────
+title: Michael Koohang
+tagline: Engineer / Designer / Athlete
+description: >-
+  Personal site of Michael Koohang — mobile engineer and designer. About, portfolio,
+  consulting, and a blog.
+author: Michael Koohang
+
+email: consulting.veto665@passmail.net
+
+# Your live site. For a user site (repo named <user>.github.io) this is correct.
+url: "https://sebasque.github.io"
+baseurl: ""
+
+# Shown in the footer / about page. Delete any you don't want.
+social:
+  github: sebasque
+
+# ─────────────────────────────────────────────────────────────
+#  Build settings — you shouldn't need to touch these.
+# ─────────────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+timezone: America/Los_Angeles
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: /feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - new-post
+  - publish
+  - .github
+  - node_modules

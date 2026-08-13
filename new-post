@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+#
+# Scaffold a new blog post.
+#
+#   ./new-post "How I learned to stop worrying"
+#   ./new-post "A dated post" 2026-09-01
+#
+set -euo pipefail
+
+cd "$(dirname "$0")"
+
+if [ $# -lt 1 ]; then
+  echo "usage: ./new-post \"Post title\" [YYYY-MM-DD]" >&2
+  exit 1
+fi
+
+title="$1"
+date="${2:-$(date +%Y-%m-%d)}"
+
+if ! echo "$date" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+  echo "error: date must look like YYYY-MM-DD (got '$date')" >&2
+  exit 1
+fi
+
+# Title -> lowercase, non-alphanumerics collapsed to single hyphens, trimmed.
+slug=$(echo "$title" \
+  | tr '[:upper:]' '[:lower:]' \
+  | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+
+if [ -z "$slug" ]; then
+  echo "error: could not build a filename from that title" >&2
+  exit 1
+fi
+
+file="_posts/${date}-${slug}.md"
+
+if [ -e "$file" ]; then
+  echo "error: $file already exists" >&2
+  exit 1
+fi
+
+mkdir -p _posts
+
+# Escape double quotes so a title with quotes stays valid YAML.
+yaml_title=${title//\"/\\\"}
+
+cat > "$file" <<EOF
+---
+title: "$yaml_title"
+date: $date
+tags: []
+description:
+---
+
+Write here.
+EOF
+
+echo "Created $file"
+
+# Open in \$EDITOR if one is set, otherwise just say where it is.
+if [ -n "${EDITOR:-}" ]; then
+  "$EDITOR" "$file"
+fi
