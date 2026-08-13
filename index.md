@@ -1,6 +1,6 @@
 ---
 title: About
-nav_order: 1
+nav: true
 hide_title: true
 permalink: /
 ---

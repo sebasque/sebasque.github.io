@@ -1,6 +1,6 @@
 ---
 title: Consulting
-nav_order: 3
+nav: true
 permalink: /consulting/
 ---
 
