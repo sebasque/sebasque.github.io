@@ -17,6 +17,7 @@ baseurl: ""
 # Shown in the footer / about page. Delete any you don't want.
 social:
   github: sebasque
+  linkedin: michaelkoohang
 
 # ─────────────────────────────────────────────────────────────
 #  Build settings — you shouldn't need to touch these.
