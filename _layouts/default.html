@@ -24,9 +24,9 @@
         {%- assign current = false -%}
         {%- if page.url == p.url -%}
           {%- assign current = true -%}
-        {%- elsif p.url == '/blog/' and page.layout == 'post' -%}
+        {%- elsif p.url == '/writing/' and page.layout == 'post' -%}
           {%- assign current = true -%}
-        {%- elsif p.url == '/blog/' and page.url == '/tags/' -%}
+        {%- elsif p.url == '/writing/' and page.url == '/tags/' -%}
           {%- assign current = true -%}
         {%- endif -%}
         <a href="{{ p.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ p.title }}</a>

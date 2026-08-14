@@ -16,5 +16,5 @@ I'm an iOS software engineer at [Waymo](https://waymo.com), where I work on the 
 - [Consulting]({{ '/consulting/' | relative_url }}) <span class="note">Freelance mobile development</span>
 - [GitHub](https://github.com/{{ site.social.github }}) <span class="note">Code</span>
 - [Portfolio]({{ '/portfolio/' | relative_url }}) <span class="note">Selected projects</span>
-- [Writing]({{ '/blog/' | relative_url }}) <span class="note">What I'm working on</span>
+- [Writing]({{ '/writing/' | relative_url }}) <span class="note">What I'm working on</span>
 {: .link-list}
