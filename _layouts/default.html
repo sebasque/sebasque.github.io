@@ -20,7 +20,7 @@
       {%- comment -%} Any page with `nav: true` appears here, sorted A–Z by title. {%- endcomment -%}
       {%- assign nav_pages = site.pages | where: "nav", true | sort_natural: "title" -%}
       {%- for p in nav_pages -%}
-        {%- comment -%} Posts and the tag index both count as "Blog" for the nav. {%- endcomment -%}
+        {%- comment -%} Posts and the tag index both count as "Writing" for the nav. {%- endcomment -%}
         {%- assign current = false -%}
         {%- if page.url == p.url -%}
           {%- assign current = true -%}

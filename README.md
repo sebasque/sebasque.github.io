@@ -1,6 +1,6 @@
 # sebasque.github.io
 
-My personal site — about, portfolio, and blog. Built with Jekyll, deployed to GitHub Pages by GitHub Actions.
+My personal site — about, portfolio, and writing. Built with Jekyll, deployed to GitHub Pages by GitHub Actions.
 
 ## Writing a post
 
@@ -23,7 +23,7 @@ That commits everything and pushes. GitHub Actions builds the site and it's live
 title: "Post title"
 date: 2026-08-12
 tags: [one, two]        # optional — these become /tags/ entries
-description: One line.  # optional — shows on the blog index and in link previews
+description: One line.  # optional — shows on the writing index and in link previews
 ---
 ```
 
